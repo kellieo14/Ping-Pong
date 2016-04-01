@@ -1,15 +1,26 @@
 header {
   text-align: center;
+  padding-top: 20px;
   background-color: #F4DEB5;
 }
 .sidebar {
   background-color: #90BB90;
+  margin-top: 20px;
+  min-height: 200px;
 }
 
-p {
+.sidebar p {
   color: white;
-}
+  }
 
 body {
   background-color: #E6E6E6;
+}
+.sidebar h4 {
+  color: #F4DEB5;
+  margin-bottom: 2px;
+}
+header {
+  margin-top: -20px;
+  height: 100px;
 }

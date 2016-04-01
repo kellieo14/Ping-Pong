@@ -6,16 +6,15 @@ var numberArray = function(inputNumber) {
     return resultArray;
 }
 
-
 var pingPong = function (array) {
   var result;
-  for (i=0; i<=array.length; i++) {
-      if (array[i] % 15 === 0) {
+  for (i = 0; i < array.length; i++) {
+    if (array[i] % 15 === 0) {
       result = "pingpong";
     } else if (array[i] % 5 === 0) {
       result = "pong";
-    } else if (array [i] % 3 === 0) {
-      var result = "ping";
+    } else if (array[i] % 3 === 0) {
+      result = "ping";
     } else {
       result = i + 1;
     }
@@ -24,10 +23,10 @@ var pingPong = function (array) {
 }
 
 $(document).ready(function() {
-  $("button").click(function() {
+	$("button").click(function(event) {
+    event.preventDefault();
     var formInput = parseInt($("#input").val());
     var array = numberArray(formInput);
-  pingPong(formInput);
-  pingPong(array);
+    pingPong(array);
   });
 });
