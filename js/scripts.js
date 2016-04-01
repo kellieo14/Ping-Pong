@@ -1,18 +1,23 @@
+var result = [];
 var calculation = function(inputNumber) {
-  for (i=0; i<inputNumber; i++) {
-    var three = (inputNumber % 3);
-    var five = (inputNumber % 5);
-    var fifteen = (inputNumber % 15);
-  }
-    if (fifteen === 0) {
-    var result = "pingpong";
-  } else if (five === 0) {
-    var result = "pong";
-  } else if (three === 0) {
-    var result = "ping";
-  } else {
-    var result = inputNumber(i);
-}
+  for (i=0; i<=inputNumber; i++) {
+     result += [i];
+    // debugger;
+      }
+//     var three = (inputNumber % 3);
+//     var five = (inputNumber % 5);
+//     var fifteen = (inputNumber % 15);
+//     var result = inputNumber[i];
+//   }
+//     if (fifteen === 0) {
+//     var result = "pingpong";
+//   } else if (five === 0) {
+//     var result = "pong";
+//   } else if (three === 0) {
+//     var result = "ping";
+//   } else {
+//     var result = inputNumber(i);
+// }
   return result;
 };
 
