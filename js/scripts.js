@@ -25,6 +25,7 @@ var pingPong = function (array) {
 $(document).ready(function() {
 	$("button").click(function(event) {
     event.preventDefault();
+    $("ul").empty();
     var formInput = parseInt($("#input").val());
     var array = numberArray(formInput);
     pingPong(array);
